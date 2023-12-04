@@ -1,0 +1,13 @@
+version: '2'
+services:
+  frontend: 
+    build: ./frontend
+    container_name: frontend_name
+    ports:
+      - '3000:3000'
+  backend:
+    build: ./backend
+    container_name: backend_name
+    ports:
+      - '5000:5000'
+    tty: true
